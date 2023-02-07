@@ -1,0 +1,115 @@
+html, body {
+  background-image: url("static/background.jpg");
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height:100%;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+form {
+  position:relative;
+  top: 30px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid rgb(174, 174, 174);
+  border-radius: 10px;
+  width: 150px;
+}
+
+select {
+  width: 170px;
+  height: 30px;
+  line-height: 50px; 
+  background-color: white;
+  border: 1px solid rgb(174, 174, 174);
+}
+
+button {
+position: relative;
+padding: 10px;
+width: 100px;
+border-radius: 10px;
+border: 0px;
+background-color: rgb(0, 206, 72);
+width: 150px;
+font-size: 15px;
+top: 10px;
+}
+
+button:hover {
+  background-color: rgb(0, 174, 61);
+  cursor: pointer;
+}
+
+.main {
+  width: 50%;
+  margin:auto;
+  height:100%;
+  background-color: #c2c2c2d9;
+}
+
+.wrapper {
+  position: relative;
+  padding: 5px 20px;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+}
+.warning {
+  background-color: rgb(203, 0, 0);
+  position: absolute;
+  padding: 7px;
+  width: 300px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#minusArea {
+  font-size: 9px;
+  width: 100px;
+  left: 320px;
+  top: 208px
+}
+.wrapper fieldset {
+  margin: 20px 0;
+  border: 0px;
+}
+
+.priceInfo {
+  position: relative;
+  top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.footer {
+  position: fixed;
+  width: 47%;
+  bottom: 0;
+  font-size: 12px;
+  opacity: 50%;
+  bottom: 10px;
+  
+}
+
