@@ -4,7 +4,7 @@ Hi, it's my application for engineering thesis. The goal was to make a web app w
 
 ## General info
 
-In repo you can see to directiories: "Backend i Testy"(BE) and "Frontend"(FE). In BE you can find data mining, data processing, training and tuning machine learning model (random forest), API for frontend and simple tests. In FE there is only React application with user-friendly interface.
+In repo you can see two directiories: "Backend i Testy"(BE) and "Frontend"(FE). In BE you can find data mining, data processing, plots, training and tuning machine learning model (random forest), API for frontend and simple tests. In FE there is only React application with user-friendly interface.
 
 ## Technologies
 
