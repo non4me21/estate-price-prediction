@@ -12,12 +12,8 @@ df2 = df2.reset_index().drop('index', axis=1)
 df2 = df2.drop_duplicates(keep='first')
 df2 = df2.replace(to_replace='10+', value='10')
 prices = df2['cena']
-nowe_ceny=[]
-for price in prices:
-    if ',' in price:
-        price = price.replace(',', '.')
-    nowe_ceny.append(price)
-df2['cena'] = nowe_ceny
+new_prices = [price.replace(',', '.') for price in prices]
+df2['cena'] = new_prices
 df2[["pokoje", "metraz", "cena"]] = df2[["pokoje", "metraz", "cena"]].apply(pd.to_numeric)
 df2 = df2[df2['pokoje'] < 7]
-df2.to_csv('final_mieszkania.csv')
+df2.to_csv('czyste_mieszkania.csv')

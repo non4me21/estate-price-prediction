@@ -1,11 +1,11 @@
 import pandas as pd
 import requests
 import csv
-API_KEY = 'klucz api do geocoding'
+API_KEY = 'GEOCODING_API_KEY'
 
 base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
 
-df = pd.read_csv('final_mieszkania.csv', index_col=0)
+df = pd.read_csv('czyste_mieszkania.csv', index_col=0)
 set_of_addresses = set(df.adres.values.tolist())
 counter = 0
 dict_to_save = {}

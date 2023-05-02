@@ -2,7 +2,7 @@ import pandas as pd
 import ast
 
 df_addresses = pd.read_csv('adresy.csv', index_col=None)
-df_estates = pd.read_csv('final_mieszkania.csv', index_col=0)
+df_estates = pd.read_csv('czyste_mieszkania.csv', index_col=0)
 address_dict = {}
 for index, row in df_addresses.iterrows():
     address_dict[row.values[0]] = ast.literal_eval(row.values[1])

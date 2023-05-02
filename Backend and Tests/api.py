@@ -1,9 +1,8 @@
-import json
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pickle
 import requests
-from urllib.parse import urlencode
+
 
 API_KEY = 'AIzaSyBy4sslGQRKnGwItbbJoanyg2QE-sRGQ_U'
 base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
