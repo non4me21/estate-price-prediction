@@ -4,7 +4,7 @@ import pickle
 import requests
 
 
-API_KEY = 'AIzaSyBy4sslGQRKnGwItbbJoanyg2QE-sRGQ_U'
+API_KEY = 'GEOCODING_API_KEY'
 base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
 model = pickle.load(open('model.sav', 'rb'))
 
@@ -24,6 +24,7 @@ def index():
         'address': address
     }
     response = requests.get(base_url, params=params).json()
+    print(response)
     location = response['results'][0]['geometry']['location']
     lat = location['lat']
     lng = location['lng']
