@@ -26,6 +26,12 @@ In repo you can see two directiories: "Backend i Testy"(BE) and "Frontend"(FE). 
 - PyTest
 - Selenium
 
+## Dataset
+Dataset consist 7000 records of flats and apartments located in Wrocław in mieszkania_wspolrzedne.csv. Columns in dataset are: address, latitude, longitude, number of rooms, floor area in squared metres and price in zloty.
+
+## Machine learning algorithm
+After consideration of few algoritms random forest algorithm had the best results. Parametres has been tuned in tuning.py using method from scikit-learn. Model is saved in model.sav file.
+
 ## Setup
 
 1. Get into "Backend i testy". Install requirements with `pip install –r requirements.txt` and run app with `python3 api.py`.
