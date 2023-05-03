@@ -27,7 +27,7 @@ In repo you can see two directiories: "Backend i Testy"(BE) and "Frontend"(FE). 
 - Selenium
 
 ## Dataset
-Dataset consist 7000 records of flats and apartments located in Wrocław in mieszkania_wspolrzedne.csv. Columns in dataset are: address, latitude, longitude, number of rooms, floor area in squared metres and price in zloty.
+Dataset consist 7000 records of flats and apartments located in Wrocław in mieszkania_wspolrzedne.csv. Data was mined from site otodom, polish online market for houses/flats/apartments. Columns in dataset are: address, latitude, longitude, number of rooms, floor area in squared metres and price in zloty.
 
 ## Machine learning algorithm
 After consideration of few algoritms random forest algorithm had the best results. Parametres has been tuned in tuning.py using method from scikit-learn. Model is saved in model.sav file.
